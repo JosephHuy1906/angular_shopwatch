@@ -1,0 +1,132 @@
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: red;
+}
+
+.hov-cl10:hover {
+    color: red;
+}
+.oder{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.oder-left{
+    width: 50%;
+}
+.oderMain{
+    width: 100%;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 5px #d7b806;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.price{
+    color: red;
+    font-weight: bold;
+}
+.status1{
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+.click{
+    float: right;
+    margin-bottom: 20px;
+}
+.oderMain .click:hover{
+    color: #d7b806;
+    transition: ease-in 0.5s;
+}
+.status2{
+    padding: 5px;
+    background-color: rgb(55, 195, 195);
+    color: white;
+    border-radius: 5px;
+
+}
+.status3{
+    padding: 5px;
+    background-color: #d7b806;
+    color: white;
+    border-radius: 5px;
+
+}
+.status4{
+    padding: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+
+}
+.status5{
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+
+}
+.oderMain-status{
+    margin-top: 10px;
+}
+.oderMain-item{
+    margin: 5px;
+}
+.oder-right{
+    width: 40%;
+    margin-left: 50px;
+}
+.detai-pro {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    
+    overflow-y: auto;
+    box-shadow: 0 0 5px gray;
+    /* float: right; */
+}
+.detai-pro::-webkit-scrollbar{
+    width: 6px;
+    background-color: #d7b806;
+}
+
+.item-detail a{
+    display: block;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    color: black;
+}
+.item-detail a:hover{
+    color: #d7b806;
+    transition: ease-in 0.5s;
+}
+.item-detail .item-title{
+    width: 180px;
+}
+.item-detail .item-title span{
+    font-size: 15px;
+    width: 100px;
+}
+.item-detail .item-title p{
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+
+.item-detail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

@@ -1,0 +1,62 @@
+<div class="admin">
+  <app-header></app-header>
+  <div class="main">
+    <main>
+      <h2>Danh Sách User</h2>
+      <table>
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+
+        <tr>
+          <td class="a"></td>
+          
+          <td class="a"></td>
+          <td class="a" colspan="2"></td>
+          <td class="a" colspan="2"></td>
+          <td class="a" colspan="2"></td>
+          <td class="ad"><a routerLink="/admin/user/add"><fa-icon [icon]="add"></fa-icon></a></td>
+        </tr>
+
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+
+        <tr>
+          <th>ID</th>
+          <th>avatar</th>
+          <th>User name</th>
+          <th colspan="2">Họ và tên</th>
+          <th colspan="3">Email</th>
+          <th>Role</th>
+        </tr>
+
+        <tr *ngFor="let item of user">
+          <td>{{ item.userId }}</td>
+          <td>
+            <img src="../../../../assets/images/{{ item.avatar }}" alt="" />
+          </td>
+          <td>{{ item.username }}</td>
+          <td colspan="2">{{ item.fullName }}</td>
+          <td colspan="3">{{ item.email }}</td>
+          <td>
+            <span *ngIf="item.roleId == 1">Admin</span>
+            <span *ngIf="item.roleId == 3">Admin Product</span>
+            <span *ngIf="item.roleId == 2">User</span>
+          </td>
+         
+        </tr>
+      </table>
+    </main>
+  </div>
+</div>

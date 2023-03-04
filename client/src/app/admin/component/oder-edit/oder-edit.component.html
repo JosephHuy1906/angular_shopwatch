@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="container">
+  <h2>Cập nhập đơn hàng</h2>
+  <form  [formGroup]="oderEditForm" (ngSubmit)="onSubmit()">
+    <label for="">Id Đơn hàng:</label>
+    <input type="" formControlName="categoryId" ngModel="{{oder.oderId}}">
+    <label for="">Trạng thái:</label>
+    <input type="text"  formControlName="name" ngModel="{{oder.statusId}}">
+    <button type="submit">Submit</button>
+  </form>
+</div>
+

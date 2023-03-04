@@ -1,0 +1,51 @@
+<div class="admin">
+  <app-header></app-header>
+  <div class="main">
+    <main>
+      <h2>Danh Sách Đơn Hàng</h2>
+      <table>
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+
+        <tr>
+          <th>OderId</th>
+          <th>Date Create</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>UserId</th>
+          <th>Status</th>
+        </tr>
+        <tr *ngFor="let item of oder">
+          <td>{{ item.oderId }}</td>
+          <td colspan="2">{{ item.date_creat }}</td>
+          <td>{{ item.price | currency : "VND" }}</td>
+          <td >{{ item.userId }}</td>
+          <td *ngIf="item.statusId == 1" class="status1">Đang chờ</td>
+          <td *ngIf="item.statusId == 2" class="status2">Đã Xác Nhận</td>
+          <td *ngIf="item.statusId == 3" class="status3">Đang giao hàng</td>
+          <td *ngIf="item.statusId == 4" class="status4">Hoàn thành</td>
+          <td *ngIf="item.statusId == 5" class="status5">Đã huỷ</td>
+          <td class="ad">
+            <a routerLink="/admin/oder/edit/{{ item.oderId }}">
+              <fa-icon [icon]="edit"></fa-icon>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </main>
+  </div>
+</div>

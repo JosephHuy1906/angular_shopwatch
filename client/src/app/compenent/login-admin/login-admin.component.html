@@ -1,0 +1,18 @@
+<div class="container">
+    
+<form action="" [formGroup]="admin" (ngSubmit)="onSubmit()">
+    <div class="logo">
+        <img src="../../../assets/images/logo.png" alt="">
+    </div>
+   
+   <h2>Đăng nhập admin</h2>
+  
+   <label for="">User Name</label>
+   <input type="text" formControlName="username">
+   <span *ngIf="errortk">{{errortk}}</span>
+   <label for="">Password</label>
+   <input type="password" formControlName="password">
+   <span *ngIf="errormk">{{errormk}}</span>
+   <button type="submit">Đăng nhập</button>
+</form>
+</div>

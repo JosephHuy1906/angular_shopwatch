@@ -1,0 +1,15 @@
+.dem{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-color: #d7b806;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    right: -10px;
+    top: 20%;
+}
+fa-icon{
+    color: #808080;
+}

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  fa-icon {
+    font-size: 20px;
+    color: white;
+    background: green;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  fa-icon:hover{
+      background: orange;
+  }
+  .main {
+    width: 1200px;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+    padding-bottom: 50px;
+  }
+  
+  .main h2 {
+    padding-left: 10px;
+    background: orange;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .main table {
+    margin: auto;
+  }
+  
+  .main th {
+    height: 50px;
+    background: greenyellow;
+    text-align: center;
+  }
+  
+  .main td {
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    width: 100px;
+    height: 200px;
+  }
+  
+  .main td img {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .main .mota {
+    width: 300px;
+  }
+  
+  .main img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .main .them {
+    width: 450px;
+  }
+  
+  .main .ad {
+   
+    line-height: 30px;
+  
+  }
+  
+  .main .ad i {
+    font-size: 20px;
+  }
+  
+  .main .them {
+    width: 100px;
+    /* background: orange; */
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+
+  
+  .main a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .main .an {
+    border: none;
+  }
+  
+  .main .a {
+    border: none;
+    height: 20px;
+  }
+  
+  ul.sub_menu {
+    display: none;
+    width: 200px;
+    background: white;
+  }
+  
+  .sub_menu li {
+    background: orange;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+  }
+  
+  .sub_menu li a {
+    color: white;
+  }
+  
+  ul > li:hover ul.sub_menu {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  .sub_menu li:hover {
+    background: green;
+  }
+  
+  .chuyentrang {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  
+  .trang a {
+    color: black;
+    text-decoration: none;
+    line-height: 30px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .trang {
+    width: 50px;
+    height: 30px;
+    box-shadow: 0 0 5px black;
+    margin-left: 10px;
+    text-align: center;
+    background: orange;
+    cursor: pointer;
+  }
+  
+  .sua {
+    width: 300px;
+  }
+  
+  .page {
+    display: flex;
+    margin: auto;
+  }
+  
+  .seach input {
+    width: 400px;
+    height: 40px;
+    border: solid 1px #d6e4e3;
+    border-right: none !important;
+    font-size: 15px;
+    background: rgb(216, 210, 210);
+    padding-left: 10px;
+  }
+  

@@ -1,0 +1,432 @@
+ 
+<app-header></app-header>
+
+ <!-- Slider -->
+ <section class="banner">
+        <img src="../../../assets/images/banner2.png" alt="IMG-BG" class="rev-slidebg" />
+
+</section>
+
+<!-- Product -->
+<div class="sec-product bg0 p-t-145 p-b-25">
+  <div class="container">
+    <div class="size-a-1 flex-col-c-m p-b-48">
+      <div class="txt-center txt-m-201 cl10 how-pos1-parent m-b-14">
+        Hot Products
+
+        <div class="how-pos1">
+          <img src="../../../assets/images/icons/logo_icon.png" alt="IMG" />
+        </div>
+      </div>
+
+      <h3 class="txt-center txt-l-101 cl3 respon1">HOt products</h3>
+    </div>
+
+    <div class="p-b-46">
+      <div class="flex-w flex-c-m filter-tope-group">
+        <button class="txt-m-104 cl9 hov2 trans-04 p-rl-27 p-b-10 how-active1" data-filter="*">
+          All Products
+        </button>
+
+        <button class="txt-m-104 cl3 hov2 trans-04 p-rl-27 p-b-10" *ngFor="let item Of cate" data-filter=".vegetable-fill" >
+          {{item.name}}
+        </button>
+        
+      </div>
+    </div>
+
+    <div class="row isotope-grid">
+      <!-- - -->
+      <div class="col-sm-6 col-md-4  p-b-75 isotope-item fruit-juic-fill other-fill" *ngFor="let sp Of proRamdom">
+        <!-- Block1 -->
+        <div class="block1">
+          <div class="block1-bg wrap-pic-w bo-all-1 bocl12 hov3 trans-04">
+            <img src="../../../assets/images/{{sp.avatar}}" alt="IMG" />
+
+            <div class="block1-content flex-col-c-m p-b-46">
+              <a href="/detail/{{sp.productId}}" class="txt-m-103 cl11 txt-center hov-cl10 trans-04 js-name-b1">
+                {{sp.name}}
+              </a>
+
+              <span class="block1-content-more txt-m-104 cl12 p-t-21 trans-04">
+                {{sp.price | currency: 'VND'}}
+              </span>
+
+              <div class="block1-wrap-icon flex-c-m flex-w trans-05">
+                <a href="product-single.html" class="block1-icon flex-c-m wrap-pic-max-w">
+                  <img src="../../../assets/images/icons/icon-view.png" alt="ICON" />
+                </a>
+
+                <a (click)="onClick(sp.productId)" class="block1-icon flex-c-m wrap-pic-max-w js-addcart-b1">
+                  <img src="../../../assets/images/icons/icon-cart.png" alt="ICON" />
+                </a>
+
+                <a href="wishlist.html" class="block1-icon flex-c-m wrap-pic-max-w js-addwish-b1">
+                  <img class="icon-addwish-b1" src="../../../assets/images/icons/icon-heart.png" alt="ICON" />
+                  <img class="icon-addedwish-b1" src="../../../assets/images/icons/icon-heart2.png" alt="ICON" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Deal -->
+<section class="sec-deal bg-img1" style="background-image: url('../../../assets/images/banner4.png')">
+  <div class="flex-w flex-m how-pos2-parent">
+
+
+    <div class="size-w-3 txt-center wrap-pic-max-s w-full-lg">
+      <!-- <img src="../../../assets/images/bannermain.png" alt="IMG" /> -->
+    </div>
+
+    <div class="size-w-4 p-t-105 p-b-90 p-r-15 respon3">
+      <div class="size-a-1 flex-col-l-m p-b-35">
+        <div class="txt-m-201 cl10 how-pos1-parent m-b-14">
+          Best Price For You
+
+          <div class="how-pos1">
+            <img src="../../../assets/images/icons/logo_icon.png" alt="IMG" />
+          </div>
+        </div>
+
+        <h3 class="txt-l-101 cl14 respon1">deal of the day</h3>
+      </div>
+
+      <div class="p-b-32">
+        <a href="#" class="txt-m-105 cl14 hov-cl10 trans-04">
+          Roasted corn
+        </a>
+
+        <div class="txt-m-105 p-t-15 p-b-22">
+          <span class="cl14"> 20$ </span>
+
+          <span class="cl14"> Now Only 15$ </span>
+        </div>
+
+        <p class="txt-s-102 cl14">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of
+          type.
+        </p>
+      </div>
+
+      <div class="flex-w coutdown100 p-b-22" data-year="0" data-month="0" data-date="10" data-hours="23"
+        data-minutes="0" data-seconds="0" data-timezone="auto">
+        <div class="flex-col-c-m how1 p-b-5 m-r-20 m-b-20">
+          <span class="txt-l-102 cl14 days"> 10 </span>
+
+          <span class="txt-m-106 cl14"> days </span>
+        </div>
+
+        <div class="flex-col-c-m how1 p-b-5 m-r-20 m-b-20">
+          <span class="txt-l-102 cl14 hours"> 25 </span>
+
+          <span class="txt-m-106 cl14"> hours </span>
+        </div>
+
+        <div class="flex-col-c-m how1 p-b-5 m-r-20 m-b-20">
+          <span class="txt-l-102 cl14 minutes"> 56 </span>
+
+          <span class="txt-m-106 cl14"> mins </span>
+        </div>
+
+        <div class="flex-col-c-m how1 p-b-5 m-r-20 m-b-20">
+          <span class="txt-l-102 cl14 seconds"> 42 </span>
+
+          <span class="txt-m-106 cl14"> secs </span>
+        </div>
+      </div>
+
+      <div class="flex-w">
+        <a href="shop-sidebar-grid.html"
+          class="flex-c-m txt-s-103 cl14 size-a-2 how-btn1 bo-all-1 bocl11 hov-btn1 trans-04">
+          Shop now
+          <span class="lnr lnr-chevron-right m-l-7"></span>
+          <span class="lnr lnr-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Product2 -->
+<section class="sec-product2 bg0 p-t-113 p-b-35">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-md-6 col-lg-4 p-b-20 m-rl-auto-md">
+        <div class="p-r-20 p-rl-0-xl">
+          <!-- slide2 -->
+          <div class="wrap-slick2">
+            <div class="p-b-20 p-rl-15">
+              <span class="txt-m-107 cl9"> new watch Lobinni</span>
+
+              <div class="flex-w flex-t p-t-5">
+                <h4 class="size-w-5 m-r-20">
+                  <span class="txt-l-103 cl6"> Watch </span>
+
+                  <span class="txt-l-104 cl3"> LOBINNI </span>
+                </h4>
+
+                <div class="wrap-arrow-slick2 flex-w m-t-6"></div>
+              </div>
+            </div>
+
+            <div class="slick2">
+              <div class="item-slick2 p-all-15">
+                <!-- item product2 -->
+                <a href="/detail/{{sp.productId}}" *ngFor="let sp Of cate1" class="flex-w flex-str size-h-1 bo-all-1 bocl12 hov3 trans-04 m-b-30 itemcate">
+                  <div class="size-w-6 flex-c-m wrap-pic-max-s">
+                    <img src="../../../assets/images/{{sp.avatar}}" alt="IMG-PRODUCT" />
+                  </div>
+
+                  <div class="size-w-7 flex-col-m p-l-30 p-tb-15 p-r-15 p-l-0-ssm">
+                    <span class="txt-m-103 cl3"> {{sp.name}} </span>
+
+                    <div class="how-line1 m-t-14 m-b-19"></div>
+
+                    <span class="txt-m-104 cl12"> {{sp.price | currency: 'VND'}} </span>
+                  </div>
+                </a>
+
+               
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-4 p-b-20 m-rl-auto-md">
+        <div class="p-rl-10 p-rl-0-xl">
+          <!-- slide2 -->
+          <div class="wrap-slick2">
+            <div class="p-b-20 p-rl-15">
+              <span class="txt-m-107 cl9"> New Watch Carnival </span>
+
+              <div class="flex-w flex-t p-t-5">
+                <h4 class="size-w-5 m-r-20">
+                  <span class="txt-l-103 cl6"> Watch </span>
+
+                  <span class="txt-l-104 cl3"> CARNIVAL </span>
+                </h4>
+
+                <div class="wrap-arrow-slick2 flex-w m-t-6"></div>
+              </div>
+            </div>
+
+            
+            <div class="slick2">
+              <div class="item-slick2 p-all-15">
+                <!-- item product2 -->
+                <a href="/detail/{{sp.productId}}" *ngFor="let sp Of cate2" class="flex-w flex-str size-h-1 bo-all-1 bocl12 hov3 trans-04 m-b-30 itemcate">
+                  <div class="size-w-6 flex-c-m wrap-pic-max-s">
+                    <img src="../../../assets/images/{{sp.avatar}}" alt="IMG-PRODUCT" />
+                  </div>
+
+                  <div class="size-w-7 flex-col-m p-l-30 p-tb-15 p-r-15 p-l-0-ssm">
+                    <span class="txt-m-103 cl3"> {{sp.name}} </span>
+
+                    <div class="how-line1 m-t-14 m-b-19"></div>
+
+                    <span class="txt-m-104 cl12"> {{sp.price | currency: 'VND'}} </span>
+                  </div>
+                </a>
+
+               
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-4 p-b-20 m-rl-auto-md">
+        <div class="p-l-20 p-rl-0-xl">
+          <!-- slide2 -->
+          <div class="wrap-slick2">
+            <div class="p-b-20 p-rl-15">
+              <span class="txt-m-107 cl9"> New Watch TeinTop </span>
+
+              <div class="flex-w flex-t p-t-5">
+                <h4 class="size-w-5 m-r-20">
+                  <span class="txt-l-103 cl6"> Watch </span>
+
+                  <span class="txt-l-104 cl3"> TEINTOP </span>
+                </h4>
+
+                <div class="wrap-arrow-slick2 flex-w m-t-6"></div>
+              </div>
+            </div>
+
+            <div class="slick2">
+              <div class="item-slick2 p-all-15">
+                <!-- item product2 -->
+                <a href="/detail/{{sp.productId}}" *ngFor="let sp Of cate3" class="flex-w flex-str size-h-1 bo-all-1 bocl12 hov3 trans-04 m-b-30 itemcate">
+                  <div class="size-w-6 flex-c-m wrap-pic-max-s">
+                    <img src="../../../assets/images/{{sp.avatar}}" alt="IMG-PRODUCT" />
+                  </div>
+
+                  <div class="size-w-7 flex-col-m p-l-30 p-tb-15 p-r-15 p-l-0-ssm">
+                    <span class="txt-m-103 cl3"> {{sp.name}} </span>
+
+                    <div class="how-line1 m-t-14 m-b-19"></div>
+
+                    <span class="txt-m-104 cl12"> {{sp.price | currency: 'VND'}} </span>
+                  </div>
+                </a>
+
+               
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Blog -->
+<section class="sec-blog bg0 p-t-145 p-b-45">
+  <div class="container">
+    <div class="size-a-1 flex-col-c-m p-b-70">
+      <div class="txt-center txt-m-201 cl10 how-pos1-parent m-b-14">
+        Keep Updated With Us
+
+        <div class="how-pos1">
+          <img src="../../../assets/images/icons/logo_icon.png" alt="IMG" />
+        </div>
+      </div>
+
+      <h3 class="txt-center txt-l-101 cl3 respon1">Watch News</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 p-b-50">
+        <div class="p-r-15 p-r-0-lg">
+          <a href="blog-single.html" class="wrap-pic-w hov4">
+            <img src="../../../assets/images/blog-01.png" alt="BLOG" />
+          </a>
+
+          <div class="flex-w p-t-30">
+            <div class="size-a-4 bg10 flex-col-c-m m-r-34">
+              <span class="txt-l-106 cl0 p-b-4"> 18 </span>
+
+              <span class="txt-m-108 cl0 p-b-5"> June </span>
+            </div>
+
+            <div class="size-w-9">
+              <h4 class="p-b-13">
+                <a href="blog-single.html" class="txt-m-109 cl3 hov-cl10 trans-04">
+                  VÌ SAO THƯƠNG HIỆU ĐỒNG HỒ LOBINNI LẠI ĐƯỢC ĐÔNG ĐẢO KHÁCH HÀNG VIỆT NAM TIN DÙNG ?
+                </a>
+              </h4>
+
+              <p class="txt-s-101 cl6 p-b-21">
+                Lobinni là một trong những thương hiệu đồng hồ nổi tiếng trên thế giới, với bề dày kinh nghiệm hơn 55
+                năm, Lobinni ngày càng khẳng định được vị trí cũng như thương hiệu của mình từ những chiếc đồng hồ
+                sang trọng, chất lượng nhất
+              </p>
+
+              <div class="how-line2 p-l-40">
+                <a href="blog-single.html" class="txt-s-105 cl9 hov-cl10 trans-04">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 p-b-50">
+        <div class="p-l-15 p-l-0-lg">
+          <a href="blog-single.html" class="wrap-pic-w hov4">
+            <img src="../../../assets/images/block-1.jpg" alt="BLOG" />
+          </a>
+
+          <div class="flex-w p-t-30">
+            <div class="size-a-4 bg10 flex-col-c-m m-r-34">
+              <span class="txt-l-106 cl0 p-b-4"> 20 </span>
+
+              <span class="txt-m-108 cl0 p-b-5"> October </span>
+            </div>
+
+            <div class="size-w-9">
+              <h4 class="p-b-13">
+                <a href="blog-single.html" class="txt-m-109 cl3 hov-cl10 trans-04">
+                  TÌM CÂU TRẢ LỜI ĐỒNG HỒ LOBINNI CÓ TỐT KHÔNG ?
+                </a>
+              </h4>
+
+              <p class="txt-s-101 cl6 p-b-21">
+                Thương hiệu đồng hồ Lobinni tại Việt Nam đang tạo nên một cơn sốt trên thị trường đồng hồ với những
+                kiệt tác thiết kế làm mê hoặc anh em chơ ...
+              </p>
+
+              <div class="how-line2 p-l-40">
+                <a href="blog-single.html" class="txt-s-105 cl9 hov-cl10 trans-04">
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Logo -->
+<div class="sec-logo bg0">
+  <div class="container">
+    <div class="flex-w flex-sa-m bo-t-1 bocl13 p-tb-60">
+      <a href="#" class="dis-block how2 p-rl-15 m-tb-20">
+        <img class="trans-04" src="../../../assets/images/logo_CARNIVAL.png" alt="IMG" />
+      </a>
+
+      <a href="#" class="dis-block how2 p-rl-15 m-tb-20">
+        <img class="trans-04" src="../../../assets/images/logo_LOBINNI.png" alt="IMG" />
+      </a>
+
+      <a href="#" class="dis-block how2 p-rl-15 m-tb-20">
+        <img class="trans-04" src="../../../assets/images/logo_TEINTOP.png" alt="IMG" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Subscribe -->
+<section class="sec-subscribe bg13 p-t-65 p-b-65">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 p-tb-15">
+        <div class="h-full flex-col-m">
+          <h4 class="txt-m-110 cl3 p-b-4">Subscribe Newsletter.</h4>
+
+          <p class="txt-s-101 cl6">
+            Get e-mail updates about our latest shop and special offers.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-7 p-tb-15">
+        <form class="flex-w flex-m h-full">
+          <input class="size-a-6 txt-s-106 cl6 plh0 p-rl-30 w-full-sm" type="text" name="email"
+            placeholder="Your email address" />
+          <button class="bg10 size-a-5 txt-s-107 cl0 p-rl-15 trans-04 hov-btn2 mt-4 mt-sm-0">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

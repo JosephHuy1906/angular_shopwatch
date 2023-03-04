@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="container">
+  <h2>Sửa Danh Mục</h2>
+  <form  [formGroup]="editCateForm" (ngSubmit)="onSubmit()">
+    <label for="">Id Danh Mục:</label>
+    <input type="" formControlName="categoryId" ngModel="{{cate.categoryId}}">
+    <label for="">Tên Danh Mục:</label>
+    <input type="text"  formControlName="name" ngModel="{{cate.name}}">
+    <button type="submit">Submit</button>
+  </form>
+</div>
+

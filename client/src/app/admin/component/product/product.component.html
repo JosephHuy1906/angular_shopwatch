@@ -1,0 +1,67 @@
+<div class="admin">
+  <app-header></app-header>
+  <div class="main">
+    <main>
+      <h2>Danh Sách Sản phẩm</h2>
+      <table>
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          
+          <td class="a"></td>
+          <td class="a" colspan="2"></td>
+          <td class="a" colspan="2"></td>
+          <td class="a" colspan="2"></td>
+          <td class="them" colspan="2"> <a routerLink="/admin/product/add"><fa-icon [icon]="add"></fa-icon></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+          <td class="a"></td>
+        </tr>
+
+
+        <tr >
+          <th>ID</th>
+          <th colspan="2">Image</th>
+          <th colspan="2">name</th>
+          <th>price</th>
+          <th class="mota" colspan="5">Describe</th>
+          <th>categoryId</th>
+          <th></th>
+          <th></th>
+        </tr>
+
+
+        <tr *ngFor="let item of sp">
+          <td>{{item.productId}}</td>
+          <td colspan="2"><img src="../../../../assets/images/{{item.avatar}}" alt=""></td>
+          <td colspan="2">{{item.name}}</td>
+          <td>{{item.price}} vnđ</td>
+          <td colspan="5">{{item.describe}}</td>
+          <td>{{item.categoryId}}</td>
+          <td class="ad"><a routerLink="/admin/product/edit/{{item.productId}}"> <fa-icon [icon]="edit"></fa-icon> </a></td>
+          <td class="ad" *ngIf="role == 1"><a (click)="remove(item.productId)"> <fa-icon [icon]="faremove"></fa-icon>  </a></td>
+        </tr>
+
+      </table>
+
+    </main>
+  </div>
+</div>

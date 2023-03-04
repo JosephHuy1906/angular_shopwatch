@@ -1,0 +1,14 @@
+.cart{
+    width: 30%;
+    text-align: center;
+}
+.cart img{
+    height: 100px;
+    object-fit: cover;
+}
+.flex-w{
+    display: flex;
+}
+.flex-w span{
+    width: 60%;
+}

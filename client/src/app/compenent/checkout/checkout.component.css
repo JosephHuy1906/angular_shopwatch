@@ -1,0 +1,18 @@
+textarea {
+    border: 1px solid #e6e6e6;
+    padding-left: 10px;
+}
+textarea:focus{
+border-color: #81b03f;
+}
+.item-checkout{
+    display: flex;
+}
+.img img{
+    /* width: 50px; */
+    height: 50px;
+    object-fit: cover;
+}
+.red{
+    color: red;
+}

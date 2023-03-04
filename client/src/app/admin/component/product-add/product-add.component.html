@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="container">
+  <h2>Thêm Sản Phẩm</h2>
+  <form  [formGroup]="createProductForm" (ngSubmit)="onSubmit()">
+
+    <label for="">Avatar:</label>
+    <input type="" formControlName="avatar" >
+    <label for="">Name:</label>
+    <input type="" formControlName="name" >
+    <label for="">Price:</label>
+    <input type="text"  formControlName="price" >
+    <label for="">Id Category:</label>
+    <select  formControlName="categoryId">
+      <option *ngFor="let item of cate" value="{{item.categoryId}}">{{item.name}}</option>
+    </select>
+    <label for="">Describe:</label>
+    <textarea  type="text"  formControlName="describe" ></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+

@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<div class="admin">
+
+    <div class="main">
+        <main>
+            <h2>Danh Sách Danh Mục</h2>
+            <table>
+                <tr>
+                    <td class="a"></td>
+                    <td class="a"></td>
+
+                </tr>
+
+                <tr>
+                    <td class="an"></td>
+                    <td class="an"></td>
+                    <td class="an"></td>
+                    <td class="them" colspan="2"> <a routerLink="/admin/category/add"><fa-icon [icon]="add"></fa-icon></a> </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>ID</th>
+                    <th colspan="2">Name</th>
+<th></th>
+<th></th>
+                </tr>
+
+
+                <tr *ngFor="let item of cate">
+                    <td>{{item.categoryId}}</td>
+                    <td colspan="2">{{item.name}}</td>
+
+                    <td class="ad"><a routerLink="/admin/category/edit/{{item.categoryId}}"> <fa-icon [icon]="edit"></fa-icon> </a></td>
+                    <td class="ad"><a (click)="xoaCate(item.categoryId)"><fa-icon [icon]="faremove"></fa-icon> </a>
+                    </td>
+                </tr>
+            </table>
+
+        </main>
+    </div>
+</div>

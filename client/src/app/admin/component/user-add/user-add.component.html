@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="container">
+  <h2>Thêm Admin</h2>
+  <form [formGroup]="addAdmin" (ngSubmit)="add()">
+    <label for="">User Name:</label>
+    <input type="text" name="name" formControlName="username">
+    <label for="">password:</label>
+    <input type="password" name="name" formControlName="password">
+    <label for="">Role:</label>
+    <select name="" id="" formControlName="roleId">
+      <option  value="3">Admin product</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+</div>

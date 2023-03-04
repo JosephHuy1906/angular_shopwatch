@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="container">
+  <h2>Sửa Danh Mục</h2>
+  <form  [formGroup]="editUser" (ngSubmit)="onSubmit()">
+    <label for="">User Name:</label>
+    <input class="readonly" type="" formControlName="username" ngModel="{{user.username}}" readonly>
+    <label for="">Tên User:</label>
+    <input class="readonly" type="text"  formControlName="fullName" ngModel="{{user.fullName}}" readonly>
+    <label for="">Phân quyền:</label>
+    <select name="" id="" formControlName="roleId">
+      <option *ngFor="let item of role" value="{{item.roleId}}">{{item.name}}</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+

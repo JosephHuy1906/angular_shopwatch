@@ -1,0 +1,10 @@
+<app-header></app-header>
+<div class="container">
+  <h2>Thêm Danh Mục</h2>
+  <form  [formGroup]="createCateForm" (ngSubmit)="spthem()">
+    <label for="">Tên Danh Mục:</label>
+    <input type="text" name="name" formControlName="name">
+    <button type="submit">Submit</button>
+  </form>
+</div>
+

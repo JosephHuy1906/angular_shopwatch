@@ -1,0 +1,34 @@
+.container{
+    width: 500px;
+    padding-bottom: 20px;
+    margin-top: 300px;
+    box-shadow: 0 0 5px orange;
+}
+.container h2{
+    text-align: center;
+    color: orangered;
+}
+.container label{
+    margin-top: 20px;
+   
+}
+.container input{
+    width: 450px;
+    height: 40px;
+    border: 2px solid lightpink;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.container button{
+    width: 450px;
+    height: 50px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    
+}
+.container button:hover{
+    background: orange;
+    color: white;
+}

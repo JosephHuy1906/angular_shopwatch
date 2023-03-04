@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="container">
+    <h2>Sửa Sản Phẩm</h2>
+    <form [formGroup]="editProductForm" (ngSubmit)="onSubmit()">
+        <label for="">Id Product:</label>
+        <input type="" formControlName="productId" ngModel="{{ sp.productId }}" />
+
+        <label for="">Avatar:</label>
+        <input type="" formControlName="avatar" ngModel="{{ sp.avatar }}" />
+
+        <label for="">Name:</label>
+        <input type="" formControlName="name" ngModel="{{ sp.name }}" />
+
+        <label for="">Price:</label>
+        <input type="text" formControlName="price" ngModel="{{ sp.price }}" />
+
+        <label for="">Id Category:</label>
+        <select formControlName="categoryId" >          
+            <option *ngFor="let item of cate" value="{{ item.categoryId }}">
+                {{ item.name }}
+            </option>
+        </select>
+
+        <label for="">Describe:</label>
+        <textarea type="text" formControlName="describe" ngModel="{{ sp.describe }}"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+<header>
+  <div class="tren">
+    <div class="chao">
+      <h2>Wecome Admin</h2>
+    </div>
+    <div class="logo">
+      <img src="../../../../assets/images/logo.png" alt="" />
+    </div>
+    <nav>
+      <ul>
+       
+        <li>
+          <a (click)="logout()"><fa-icon [icon]="falogout"></fa-icon> Đăng Xuất </a>
+          
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <nav class="duoi">
+    <ul>
+      <li class="title">
+        <h3><a routerLink="/admin">Admin Menu</a></h3>
+      </li>
+      <li class="chon"><a routerLink="/admin/category">Danh Mục</a></li>
+      <li class="chon"><a routerLink="/admin/product">Sản Phẩm</a></li>
+      <li class="chon"><a routerLink="/admin/user">User</a></li>
+      <li class="chon"><a routerLink="/admin/oder">Đơn Hàng</a></li>
+    </ul>
+  </nav>
+</header>

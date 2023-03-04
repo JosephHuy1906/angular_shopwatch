@@ -1,0 +1,121 @@
+header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background: white;
+}
+.admin header {
+  width: 100%;
+  height: 50px;
+}
+
+.chon {
+  width: 100px;
+  text-align: center;
+}
+
+ul .chon:hover {
+  border: none;
+  background: orange;
+  color: white;
+  transition: ease 1s;
+}
+
+ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 40px;
+  color: black;
+  cursor: pointer;
+}
+
+ul .title {
+  background: green;
+  border: none;
+}
+
+ul .title h3 {
+  color: white;
+  line-height: 40px;
+}
+
+.tren {
+  display: flex;
+  height: 100px;
+}
+.tren .logo{
+  width: 40%;
+  height: 80px;
+  line-height: 80px;
+}
+.tren .logo img{
+  height: 80px;
+  object-fit: cover;
+  line-height: 80px;
+}
+.tren .chao{
+  width: 30%;
+ 
+}
+.tren .chao h2 {
+  margin-left: 20px;
+  line-height: 50px;
+  color: green;
+  line-height: 100px;
+}
+
+.tren nav {
+  width: 30%;
+  text-align: right;
+  line-height: 100px;
+}
+
+.tren nav ul {
+  display: flex;
+  right: 0;
+}
+
+.tren nav ul li {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.tren nav ul li a {
+  text-decoration: none;
+  color: brown;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.tren nav ul li a i {
+  color: orange;
+}
+
+.duoi {
+  background: green;
+  color: white;
+}
+
+.duoi ul {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+
+.duoi ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.duoi ul li h3 {
+  line-height: 40px;
+}
+
+.duoi ul li a {
+  text-decoration: none;
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
+}
